@@ -1,46 +1,33 @@
-# Book_Storemanagement_System_using_python
-Book Store management System using python
-<!--Plan for Book Store Managment-->
+print("We have three types of operations!!")
+print("1. Add a new Book info")
+print("2. Read Book Store")
+print("3. Search Book info")
+print("4. Remove specific Book info")
 
-<!--Add book information-->
-## Need information (type-of-information),
-* Class
--- book details
--- Add()
--- write book details in text 
--- Pre massage
--- input adding information
+while True:
+    n= input("\nPlease enter the number of the operation you would like to run, or type 'Exit: ")
+    if n.isnumeric() and int(n)==1 :
+        from add_book import AddBookInfo
+        book = AddBookInfo().add_book_info()
 
-<!--Read book information-->
-## Need Name perametar of Which book you want to see
+    elif n.isnumeric() and int(n)==2:
+        from read_book_store import ReadBook
+        read=ReadBook().read_store()
 
-*Class
--- book title 
--- read book()
--- open and read store
--- print
+    elif n.isnumeric() and int(n)==3:
+        from search import SearchingInfo
+        view=SearchingInfo().search_book_info()
 
-<!--Remove book information-->
-##Need name and book id which book want to remove
-*class
--- find book title, book id
--- remove() 
--- read line by line and store lines
--- check book title and id 
--- skip checkable book info/ remove
--- Store readable line
--- rewrite on those lines 
+    elif n.isnumeric() and int(n)==4:
+        from remove import RemoveBookInfo
+        remove_book = RemoveBookInfo().remove_book_info()
 
-<!--Search File-->
-##Search book base on title input title from user
-*Class
--- Searching ()/ initialization
--- Search and check title
--- store founding title and print
--- if not found then error 
+    elif n.isnumeric() and int(n) not in (1,2,3,4) :
+        print("Please enter a valid number for the operation (1, 2, 3, or 4)")
 
-<!--main File-->
-*import which operation and operation-file want to happend
--- add book class and function call
--- View class and function call
--- Remove class and function call
+    elif n.isalpha and n.upper() != "EXIT":
+        print("If you wish to exit, type 'Exit'. ):(")
+        
+    else: 
+        print("Your operation has been exited. Thank You!!")
+        break

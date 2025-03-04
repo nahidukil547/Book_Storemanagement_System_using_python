@@ -1,0 +1,44 @@
+<!--Plan for Book Store Managment-->
+
+<!--Add book information-->
+## Need information (type-of-information),
+* Class
+-- book details
+-- Add()
+-- write book details in text 
+-- Pre massage
+-- input adding information
+
+<!--Read book information-->
+## Need Name perametar of Which book you want to see
+
+*Class
+-- book title 
+-- read book()
+-- open and read store
+-- print
+
+<!--Remove book information-->
+##Need name and book id which book want to remove
+*class
+-- find book title, book id
+-- remove() 
+-- read line by line and store lines
+-- check book title and id 
+-- skip checkable book info/ remove
+-- Store readable line
+-- rewrite on those lines 
+
+<!--Search File-->
+##Search book base on title input title from user
+*Class
+-- Searching ()/ initialization
+-- Search and check title
+-- store founding title and print
+-- if not found then error 
+
+<!--main File-->
+*import which operation and operation-file want to happend
+-- add book class and function call
+-- View class and function call
+-- Remove class and function call

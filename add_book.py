@@ -35,11 +35,7 @@ class AddBookInfo():
         book_id=input   ("Book ID        : ")
         genre=input     ("Genre          : ")
         price=input     ("price          : ")
-        quantity_in_stock=input("In Stock       : ")
+        quantity_in_stock=int(input("In Stock       : "))
         book=AddBook(title, author, book_id, genre, price, quantity_in_stock)
         book.add_book()
-        
-
     
-# book = AddBookInfo()
-# book.add_book_info()
